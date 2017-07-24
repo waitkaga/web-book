@@ -1102,7 +1102,7 @@ filter:alpha(opacity=85);}
 .widget-navcontent{clear: both;position: relative;}
 .widget-navcontent .item{padding: 15px;width: 100%;position: absolute;left: 100%;opacity: 0}
 .widget-navcontent .item.active{left: 0;opacity: 1}
-.widget-navcontent .item-01 li{margin-bottom: 0px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;font-size: 12px;}
+.widget-navcontent .item-01 li{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;font-size: 12px;}
 .widget-navcontent .item-01 li a span{color: #FF5E52;}
 .widget-navcontent .item-01 li a:hover span{color: #45B6F7;}
 .widget-navcontent .item-01 time{float: right;color: #bbb;margin-left: 10px;}
