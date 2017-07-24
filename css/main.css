@@ -1,4 +1,4 @@
-body{font-family: 'Microsoft Yahei';color: #555;}
+﻿body{font-family: 'Microsoft Yahei';color: #555;}
 ul,ol,dl,dt,dd{margin: 0;padding: 0}
 ul{list-style: none;}
 table{font-size: 12px;}
@@ -2427,6 +2427,9 @@ pre.prettyprint.linenums ol li {
 @media (max-width:640px){
 	#navs .item li{width: 32.333333%;}
 	#navs .item h2{width: auto;text-align: center;	}
+}
+@media (max-width:721px){
+	.site-nav.site-navbar{display:none;}
 }
 @media (max-width:320px){
 	#navs .item li{width: 49%;}
