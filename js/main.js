@@ -63,29 +63,29 @@ if( $('.sns-wechat').length ){
 }
 
 
-// if( $('.carousel').length ){
-//     var el_carousel = $('.carousel')
+if( $('.carousel').length ){
+    var el_carousel = $('.carousel')
 
-//     el_carousel.carousel({
-//         interval: 4000
-//     })
+    el_carousel.carousel({
+        interval: 4000
+    })
 
-//     tbquire(['hammer'], function(Hammer) {
+    tbquire(['hammer'], function(Hammer) {
 
-//         // window.Hammer = Hammer
+        // window.Hammer = Hammer
         
-//         var mc = new Hammer(el_carousel[0]);
+        var mc = new Hammer(el_carousel[0]);
 
-//         mc.on("panleft panright swipeleft swiperight", function(ev) {
-//             if( ev.type == 'swipeleft' || ev.type == 'panleft' ){
-//                 el_carousel.carousel('next')
-//             }else if( ev.type == 'swiperight' || ev.type == 'panright' ){
-//                 el_carousel.carousel('prev')
-//             }
-//         });
+        mc.on("panleft panright swipeleft swiperight", function(ev) {
+            if( ev.type == 'swipeleft' || ev.type == 'panleft' ){
+                el_carousel.carousel('next')
+            }else if( ev.type == 'swiperight' || ev.type == 'panright' ){
+                el_carousel.carousel('prev')
+            }
+        });
 
-//     })
-// }
+    })
+}
 
 
 if( Number(jsui.ajaxpager) > 0 && ($('.excerpt').length || $('.excerpt-minic').length) ){
