@@ -63,29 +63,29 @@ if( $('.sns-wechat').length ){
 }
 
 
-if( $('.carousel').length ){
-    var el_carousel = $('.carousel')
+// if( $('.carousel').length ){
+//     var el_carousel = $('.carousel')
 
-    el_carousel.carousel({
-        interval: 4000
-    })
+//     el_carousel.carousel({
+//         interval: 4000
+//     })
 
-    tbquire(['hammer'], function(Hammer) {
+//     tbquire(['hammer'], function(Hammer) {
 
-        // window.Hammer = Hammer
+//         // window.Hammer = Hammer
         
-        var mc = new Hammer(el_carousel[0]);
+//         var mc = new Hammer(el_carousel[0]);
 
-        mc.on("panleft panright swipeleft swiperight", function(ev) {
-            if( ev.type == 'swipeleft' || ev.type == 'panleft' ){
-                el_carousel.carousel('next')
-            }else if( ev.type == 'swiperight' || ev.type == 'panright' ){
-                el_carousel.carousel('prev')
-            }
-        });
+//         mc.on("panleft panright swipeleft swiperight", function(ev) {
+//             if( ev.type == 'swipeleft' || ev.type == 'panleft' ){
+//                 el_carousel.carousel('next')
+//             }else if( ev.type == 'swiperight' || ev.type == 'panright' ){
+//                 el_carousel.carousel('prev')
+//             }
+//         });
 
-    })
-}
+//     })
+// }
 
 
 if( Number(jsui.ajaxpager) > 0 && ($('.excerpt').length || $('.excerpt-minic').length) ){
@@ -198,14 +198,14 @@ if( $('.prettyprint').length ){
 */
 jsui.rb_comment = ''
 if (jsui.bd.hasClass('comment-open')) {
-    jsui.rb_comment = "<li><a href=\"javascript:(scrollTo('#comments',-15));\"><i class=\"fa fa-comments\"></i></a><h6>È¥ÆÀÂÛ<i></i></h6></li>"
+    jsui.rb_comment = "<li><a href=\"javascript:(scrollTo('#comments',-15));\"><i class=\"fa fa-comments\"></i></a><h6>å»è¯„è®º<i></i></h6></li>"
 }
 
 jsui.bd.append('\
     <div class="m-mask"></div>\
     <div class="rollbar"><ul>'
     +jsui.rb_comment+
-    '<li><a href="javascript:(scrollTo());"><i class="fa fa-angle-up"></i></a><h6>È¥¶¥²¿<i></i></h6></li>\
+    '<li><a href="javascript:(scrollTo());"><i class="fa fa-angle-up"></i></a><h6>å»é¡¶éƒ¨<i></i></h6></li>\
     </ul></div>\
 ')
 
@@ -566,13 +566,13 @@ function strToDate(str, fmt) { //author: meizz
     if( !fmt ) fmt = 'yyyy-MM-dd hh:mm:ss'
     str = new Date(str*1000)
     var o = {
-        "M+": str.getMonth() + 1, //ÔÂ·İ   
-        "d+": str.getDate(), //ÈÕ   
-        "h+": str.getHours(), //Ğ¡Ê±   
-        "m+": str.getMinutes(), //·Ö   
-        "s+": str.getSeconds(), //Ãë   
-        "q+": Math.floor((str.getMonth() + 3) / 3), //¼¾¶È   
-        "S": str.getMilliseconds() //ºÁÃë   
+        "M+": str.getMonth() + 1, //æœˆä»½   
+        "d+": str.getDate(), //æ—¥   
+        "h+": str.getHours(), //å°æ—¶   
+        "m+": str.getMinutes(), //åˆ†   
+        "s+": str.getSeconds(), //ç§’   
+        "q+": Math.floor((str.getMonth() + 3) / 3), //å­£åº¦   
+        "S": str.getMilliseconds() //æ¯«ç§’   
     };
     if (/(y+)/.test(fmt))
         fmt = fmt.replace(RegExp.$1, (str.getFullYear() + "").substr(4 - RegExp.$1.length));
